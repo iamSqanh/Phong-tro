@@ -2,12 +2,14 @@ import {} from 'react';
 import { Outlet } from 'react-router-dom';
 
 import Header from './Header';
+import Navigation from './Navigation';
 
 function Home() {
     return (
-        <div className="w-1440 h-full m-auto">
+        <div className="w-full h-full flex flex-col items-center">
             <Header />
-            <div className="w-full flex flex-col items-center justify-start">{<Outlet />}</div>
+            <Navigation />
+            <div className="w-1440 flex flex-col items-center justify-start">{<Outlet />}</div>
         </div>
     );
 }
