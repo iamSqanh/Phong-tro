@@ -1,7 +1,6 @@
 import { memo } from 'react';
 
 function Button({ text, textColor, bgColor, IconAfter, onClick, fullWidth }) {
-    console.log('re-render');
     return (
         <button
             className={`py-2 px-4 ${textColor} ${bgColor} ${
